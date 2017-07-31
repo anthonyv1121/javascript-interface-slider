@@ -1,0 +1,22 @@
+<div class="main">
+  <% data.slides.forEach(function(slide, index){%>
+    <img <% if(index === 0){%>
+      class="active"<%}%>src="img/slide-<%=index+1%>.png" alt="5 Axis Vise Application">
+  <% }) %>
+
+
+</div>
+
+<div class="caption">
+  <% data.slides.forEach(function(slide, index){%>
+    <div class="slide <% if(index === 0){ %>active <%}%>"id="slide-<%=index%>">
+      <% if(slide.title){%>
+        <h3><%=slide.title%></h3>
+    <%  } %>
+        <p <%if( (index === 2) || (index >=5 && index <=7) ){%> class="text-centered"<%}%>><%- slide.description%></p>
+    </div>
+  <% }) %>
+
+
+
+</div>

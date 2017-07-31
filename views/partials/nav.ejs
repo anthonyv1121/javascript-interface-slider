@@ -1,0 +1,9 @@
+<div class="nav">
+  <h2> <%=data.h2%> </h2>
+  <ul>
+    <%
+     for (link of data.menu){%>
+       <li><a href="<%=link.url%>"><%=link.label%></a></li>
+     <%}%>
+</ul>
+</div>

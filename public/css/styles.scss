@@ -1,0 +1,176 @@
+/* App Styles
+http://anthonyvlombardo.com/portfolio
+v1.0 | 20170710
+*/
+@import "variables";
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+
+    &.center {
+      margin: 50px auto 0;
+      width: 750px;
+    }
+}
+.firefox{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-stretch: condensed;
+  font-weight: 900;
+}
+.webkit {
+  font-family: "HelveticaNeue-CondensedBlack", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.animationPreset{
+  opacity: 0;
+  left: 0;
+  position: $absolute;
+  width: $full;
+}
+.animationActive{
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.animationFadeOut {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.text-centered {
+  text-align: center;
+}
+strong {
+  font-weight: bold;
+}
+h1 {
+  font-size:52px;
+  background: -webkit-linear-gradient(#999, #000);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+  text-shadow: rgba(0,0,0,.3) 3px 2px 5px;
+  @extend .firefox, .webkit;
+}
+.container {
+  border: 1px solid #c5c5c5;
+  border-radius: 8px;
+  max-width: 740px;
+  min-height: 540px;
+  overflow: hidden;
+  position: $relative;
+}
+
+.content,
+.content > div{
+  float: $float;
+}
+.container,
+.content,
+.caption {
+  width: $full;
+}
+h2 {
+  color: #fff;
+  font-size: 22px;
+  @extend .firefox, .webkit;
+  font-weight: normal;
+}
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  width: $full - $offset;
+}
+.main {
+  width: $mainWidth;
+  min-height: $contentHeight;
+  overflow: hidden;
+  position: $relative;
+    img {
+      @extend .animationPreset;
+        &.active{
+          @extend .animationActive;
+        }
+        &.fadeOut{
+          @extend .animationFadeOut;
+        }
+    }
+}
+.caption {
+  background-color: #e1e1e1;
+  clear: both;
+  height: 122px;
+  padding: 10px 0;
+  box-sizing: $borderBox;
+  position: $relative;
+    .slide {
+      left: 10px;
+      @extend .animationPreset;
+        &.active{
+          @extend .animationActive;
+        }
+        &.fadeOut{
+          @extend .animationFadeOut;
+        }
+        & > p {
+        font-size: 22px;
+        line-height: 26px;
+        width: $full - $offset;
+      }
+      & > h3 + p{
+        font-size: 17px;
+        line-height: 21px;
+      }
+    }
+}
+.nav{
+  background-color: #000;
+  box-sizing: $borderBox;
+  min-height: $contentHeight;
+  padding: 20px 10px;
+  width: 100% - $mainWidth;
+    & > ul {
+      margin-top: 40px;
+        & > li{
+            cursor: pointer;
+            & > a, & > a:visited {
+              background-color: $primaryColor;
+              border-radius: 8px;
+              margin-bottom: 10px;
+              padding: 8px;
+              text-align: center;
+              display: block;
+                &:hover{
+                  background-color: #fff;
+                  color: $primaryColor;
+              }
+            }
+            #{$a-tags} {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+  }
+}
+.controls {
+  float: right;
+  margin: 10px 7px 0 0;
+    button{
+      background-color: $primaryColor;
+      color: #fff;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
+      font-size: 14px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+        &:hover{
+          background-color:#000;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+ "env": "dev",
+ "css": "css",
+ "title": "Tombstone City: 5 Axis Vise",
+ "meta": "Tombstone City: 5 Axis Vise",
+ "h1": "5-AXIS WORK HOLDING MADE EASY",
+ "h2": "The New 5AX 100 Vise by Visher & Boll Swiss made.",
+ "controls": ["« back", "next »"],
+ "menu": [
+           {"label":"Interactive Catalog", "url": "/resources/digital-brochures/5-axis-vises/"},
+           {"label":"Application Examples", "url": "/5-axis-vises/application/"},
+           {"label":"Vise Assembly", "url": "/5-axis-vises/videos/"},
+           {"label":"Videos", "url": "/5-axis-vises/videos/"},
+           {"label":"CAD Files", "url": "/resources/cad-files/5-axis-vises/"}
+         ],
+ "slides": [
+            {
+              "title": "Put the world of 5-axis machining in the palm of your hands.",
+              "description": "Completely redesigned and streamlined for the most demanding work holding applications."
+            },
+            {
+              "description": "Easily fits ANY tabletype, T-slotted or Grind Pattern. Clamping forces are at the closest point to the work piece, jaws will NOT bow out under pressure. Designed to save you time & money."
+            },
+            {
+              "description": "Unrestricted all-around access to the work piece."
+            },
+            {
+              "description": "FULL clamping capacity is generated right below the work piece, this prevents the jaws from bowing out."
+            },
+            {
+              "description": "Conventional 5 Axis Vise has clamping force far away from the work piece. Vb 5AX 100 easily overcomes this problem."
+            },
+            {
+              "description": "<strong>SERRATED</strong> grip jaws that don’t let<br> go with a clamping depth as low as .157”."
+            },
+            {
+              "description": "Designed to hold a large range of part shapes:<br> rounds, cubes, odd shaped forgings."
+            },
+            {
+              "description": "Holds uneven parts securely.<br> Smooth jaws available for pre-machined stock."
+            }
+        ]
+}

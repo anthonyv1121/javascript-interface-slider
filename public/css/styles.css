@@ -1,0 +1,144 @@
+/* App Styles
+http://anthonyvlombardo.com/portfolio
+v1.0 | 20170710
+*/
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857; }
+  body.center {
+    margin: 50px auto 0;
+    width: 750px; }
+
+.firefox, h1, h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-stretch: condensed;
+  font-weight: 900; }
+
+.webkit, h1, h2 {
+  font-family: "HelveticaNeue-CondensedBlack", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.animationPreset, .main img, .caption .slide {
+  opacity: 0;
+  left: 0;
+  position: absolute;
+  width: 100%; }
+
+.animationActive, .main img.active, .caption .slide.active {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+.animationFadeOut, .main img.fadeOut, .caption .slide.fadeOut {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+.text-centered {
+  text-align: center; }
+
+strong {
+  font-weight: bold; }
+
+h1 {
+  font-size: 52px;
+  background: -webkit-linear-gradient(#999, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: rgba(0, 0, 0, 0.3) 3px 2px 5px; }
+
+.container {
+  border: 1px solid #c5c5c5;
+  border-radius: 8px;
+  max-width: 740px;
+  min-height: 540px;
+  overflow: hidden;
+  position: relative; }
+
+.content,
+.content > div {
+  float: left; }
+
+.container,
+.content,
+.caption {
+  width: 100%; }
+
+h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: normal; }
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  width: 97%; }
+
+.main {
+  width: 75%;
+  min-height: 418px;
+  overflow: hidden;
+  position: relative; }
+
+.caption {
+  background-color: #e1e1e1;
+  clear: both;
+  height: 122px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  position: relative; }
+  .caption .slide {
+    left: 10px; }
+    .caption .slide > p {
+      font-size: 22px;
+      line-height: 26px;
+      width: 97%; }
+    .caption .slide > h3 + p {
+      font-size: 17px;
+      line-height: 21px; }
+
+.nav {
+  background-color: #000;
+  box-sizing: border-box;
+  min-height: 418px;
+  padding: 20px 10px;
+  width: 25%; }
+  .nav > ul {
+    margin-top: 40px; }
+    .nav > ul > li {
+      cursor: pointer; }
+      .nav > ul > li > a, .nav > ul > li > a:visited {
+        background-color: #0e5ba4;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        padding: 8px;
+        text-align: center;
+        display: block; }
+        .nav > ul > li > a:hover, .nav > ul > li > a:visited:hover {
+          background-color: #fff;
+          color: #0e5ba4; }
+      .nav > ul > li a, .nav > ul > li a:active, .nav > ul > li a:visited {
+        color: #fff;
+        text-decoration: none; }
+
+.controls {
+  float: right;
+  margin: 10px 7px 0 0; }
+  .controls button {
+    background-color: #0e5ba4;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; }
+    .controls button:hover {
+      background-color: #000; }
+
+/*# sourceMappingURL=styles.css.map */

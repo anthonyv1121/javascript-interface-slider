@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title> <%=data.title%> </title>
+     <meta name="description" content="<%=data.meta%>">
+     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="<%=data.css%>/reset.css" rel="stylesheet"/>
+     <link rel="stylesheet" href="<%=data.css%>/styles.css" rel="stylesheet"/>
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+ </head>
+
+ <body
+ <%
+    if(data.env === "dev"){ %>
+        class="center">
+    <%} 
+    else { %>
+        >
+    <% } %>
+   <h1> <%=data.h1%> </h1>
+   <div class="container">
+     <div class="content" id="slider">
+      <% include partials/nav %>
+      <% include partials/slides %>
+     </div>
+   </div>
+
+   <div class="controls">
+     <%for (btn of data.controls){%>
+        <button><%=btn%></button>
+     <%}%>
+
+   </div>
+   <script src = "js/script.js"></script>
+ </body>
+
+ </html>
